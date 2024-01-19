@@ -36,6 +36,7 @@ body {
     margin-right: auto;
 	 font-family: 'Inter', sans-serif;
 	 background-color:${COLORS.primary};
+	 color: ${COLORS.secondary};
 }
 `;
 

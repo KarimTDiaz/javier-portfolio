@@ -1,77 +1,40 @@
 import { useAnimate } from 'framer-motion';
 import { useEffect } from 'react';
 import { v4 } from 'uuid';
+import Text from '../../components/text/Text';
+import Transition from '../../components/transition/Transition';
+import { handleMainTitleAnimate, letters } from '../../constants/animations';
+import { ICONS } from '../../constants/icons';
+import { FONT_FAMILY, FONT_SIZE } from '../../constants/variables';
+import { HOME_VIDEOS } from '../../constants/videos';
 import {
+	BottomLeftVideo,
+	BottomLeftVideoContainer,
+	BottomRightVideo,
+	BottomRightVideoContainer,
 	HiddenTitle,
 	HomeContainer,
+	IconArchive,
+	NameText,
+	RolText,
 	TitleContainer,
-	TitleLetter
+	TitleLetter,
+	TopVideo,
+	TopVideoContainer
 } from './styles';
 const Home = () => {
 	const [scope, animate] = useAnimate();
-
-	const letters = [
-		{
-			id: 'j',
-			text: 'J',
-			initial: { y: '100%' },
-			animate: { y: 0 },
-			transition: { duration: 0.8, ease: 'backOut', delay: 0.5 }
-		},
-		{
-			id: 't',
-			text: 'T',
-			initial: { y: '100%' },
-			animate: { y: 0 },
-			transition: { duration: 0.5, ease: 'backOut', delay: 0.5 }
-		},
-		{
-			id: 'il',
-			text: 'IL',
-			initial: { y: '100%' },
-			animate: { y: 0 },
-			transition: { duration: 0.9, ease: 'backOut', delay: 0.5 }
-		},
-		{
-			id: 'o',
-			text: 'O',
-			initial: { y: '100%' },
-			animate: { y: 0 },
-			transition: { duration: 0.5, ease: 'backOut', delay: 0.5 }
-		},
-		{
-			id: 'u',
-			text: 'U',
-			initial: { y: '100%' },
-			animate: { y: 0 },
-			transition: { duration: 0.5, ease: 'backOut', delay: 0.5 }
-		},
-		{
-			id: 'n',
-			text: 'N',
-			initial: { y: '100%' },
-			animate: { y: 0 },
-			transition: { duration: 0.5, ease: 'backOut', delay: 0.5 }
-		},
-		{
-			id: 'i',
-			text: 'I',
-			initial: { y: '100%' },
-			animate: { y: 0 },
-			transition: { duration: 0.5, ease: 'backOut', delay: 0.5 }
-		}
-	];
-
+	console.log('render');
 	useEffect(() => {
 		setTimeout(() => {
-			handleAnimate(animate);
+			handleMainTitleAnimate(animate);
 		}, 1500);
 	}, []);
 
 	return (
 		<>
-			<HomeContainer>
-				<TitleContainer ref={scope}>
+			<HomeContainer ref={scope}>
+				<TitleContainer>
 					{letters.map(letter => (
 						<TitleLetter
 							key={v4()}
@@ -85,81 +48,56 @@ const Home = () => {
 					))}
 
 					<HiddenTitle
-						initial={{ opacity: 1 }}
-						animate={{ opacity: 0 }}
-						transition={{ delay: 0.8 }}
+						initial={{ display: 'block' }}
+						animate={{ display: 'none', height: 0 }}
+						transition={{ delay: 1.5 }}
 					></HiddenTitle>
 				</TitleContainer>
+				<NameText
+					initial={{ opacity: 0 }}
+					animate={{ opacity: 1 }}
+					transition={{ delay: 3 }}
+				>
+					<Text
+						size={[FONT_SIZE.xxs, FONT_SIZE.s, FONT_SIZE.l, FONT_SIZE.xl]}
+						font={FONT_FAMILY.secondary}
+					>
+						JAVIER TILOUNI
+					</Text>
+				</NameText>
+				<RolText
+					initial={{ opacity: 0 }}
+					animate={{ opacity: 1 }}
+					transition={{ delay: 3 }}
+				>
+					<Text
+						size={[FONT_SIZE.xxs, FONT_SIZE.s, FONT_SIZE.l, FONT_SIZE.xl]}
+						font={FONT_FAMILY.secondary}
+					>
+						AUDIOVISUAL ARTIST
+					</Text>
+				</RolText>
+				<TopVideoContainer id='top-vid' />
+				<TopVideo {...HOME_VIDEOS.topVideo} />
+				<BottomLeftVideoContainer id='bottom-left-vid' />
+				<BottomLeftVideo {...HOME_VIDEOS.bottomLeftVideo} />
+				<BottomRightVideoContainer id='bottom-right-vid' />
+				<BottomRightVideo {...HOME_VIDEOS.bottomRightVideo} />
+				<IconArchive
+					{...ICONS.archive}
+					initial={{ opacity: 0 }}
+					animate={{ opacity: 1 }}
+					transition={{ delay: 3 }}
+				/>
 			</HomeContainer>
 		</>
 	);
 };
 
-const handleAnimate = async animate => {
-	animate(
-		'#j',
-		{ top: '-30vh' },
-		{ type: 'spring', damping: 12, stiffness: 100 }
-	);
-	animate(
-		'#t',
-		{ top: '-30vh' },
-		{ type: 'spring', damping: 12, stiffness: 100 }
-	);
-	animate(
-		'#il',
-		{ top: '-30vh' },
-		{ type: 'spring', damping: 12, stiffness: 100 }
-	);
-	animate(
-		'#o',
-		{ top: '-30vh' },
-		{ type: 'spring', damping: 12, stiffness: 100 }
-	);
-	animate(
-		'#u',
-		{ top: '25vh' },
-		{ type: 'spring', damping: 12, stiffness: 100 }
-	);
-	animate(
-		'#n',
-		{ top: '25vh' },
-		{ type: 'spring', damping: 12, stiffness: 100 }
-	);
-	await animate(
-		'#i',
-		{ top: '25vh' },
-		{ type: 'spring', damping: 12, stiffness: 100 }
-	);
-	animate(
-		'#j',
-		{ left: '-4vw' },
-		{ type: 'spring', damping: 12, stiffness: 100 }
-	);
-	animate(
-		'#t',
-		{ left: '-4vw' },
-		{ type: 'spring', damping: 12, stiffness: 100 }
-	);
+/* const animation = animate => {
+	setTimeout(() => {
+		handleMainTitleAnimate(animate);
+	}, 1500);
+}; */
 
-	animate(
-		'#il',
-		{ right: '-40vw' },
-		{ type: 'spring', damping: 12, stiffness: 100 }
-	);
-	animate('#o', { right: '-40vw' });
-	animate(
-		'#u',
-		{ left: '-40vw' },
-		{ type: 'spring', damping: 12, stiffness: 100 }
-	);
-	animate(
-		'#n',
-		{ left: '-40vw' },
-		{ type: 'spring', damping: 12, stiffness: 60 }
-	);
-
-	animate('#i', { right: 0 }, { type: 'spring', damping: 12, stiffness: 100 });
-};
-
-export default Home;
+export default Transition(Home);

@@ -1,46 +1,22 @@
-import { motion } from 'framer-motion';
-import { MenuLink, MenuList, MenuListItem } from './styles';
+import { useLocation } from 'react-router-dom';
+import { MENU_ITEMS } from '../../constants/menu';
+import { MenuLink, MenuList, MenuListItem, RollText } from './styles';
+
 const Menu = () => {
+	const location = useLocation();
+	const currentPath = location.pathname;
 	return (
 		<>
 			<nav>
-				<MenuList>
-					<MenuListItem>
-						<MenuLink>HOME</MenuLink>
-					</MenuListItem>
-					<MenuListItem>
-						<MenuLink>WORKS</MenuLink>
-					</MenuListItem>
-					<MenuListItem>
-						<MenuLink>ABOUT</MenuLink>
-					</MenuListItem>
-					{
-						<MenuListItem>
-							<motion.a
-								initial={{ opacity: 0 }}
-								animate={{ opacity: 1 }}
-								transition={{ delay: 1.2 }}
-								style={{ position: 'fixed', right: '46vw', top: '50vh' }}
-							>
-								JAVIER TILOUNI
-							</motion.a>
+				<MenuList path={currentPath}>
+					{MENU_ITEMS.map(item => (
+						<MenuListItem key={item.id}>
+							<MenuLink to={item.route}>
+								<RollText>{item.name}</RollText>
+								<RollText>{item.name}</RollText>
+							</MenuLink>
 						</MenuListItem>
-					}
-					{
-						<MenuListItem>
-							<a
-								style={{
-									position: 'fixed',
-									bottom: 0,
-									width: '100vw',
-									display: 'flex',
-									justifyContent: 'center'
-								}}
-							>
-								About
-							</a>
-						</MenuListItem>
-					}
+					))}
 				</MenuList>
 			</nav>
 		</>
