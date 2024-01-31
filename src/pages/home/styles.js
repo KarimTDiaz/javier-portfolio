@@ -5,13 +5,13 @@ import { COLORS } from '../../constants/variables';
 const HomeContainer = styled.div`
 	position: relative;
 	width: 100vw;
-	/* height: 100; */
+	height: 100dvh;
 	overflow: hidden;
 `;
 
 const TitleContainer = styled.div`
 	width: 100vw;
-	height: 100vh;
+	height: 100dvh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
