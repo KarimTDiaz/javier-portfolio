@@ -7,7 +7,7 @@ const MenuList = styled.ul`
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	margin-bottom: ${({ path }) => path === '/works' && '2rem'};
+	margin-bottom: ${({ path }) => path === '/works' && '5rem'};
 	@media screen and (min-width: 1440px) {
 	}
 	& > :nth-child(1) {

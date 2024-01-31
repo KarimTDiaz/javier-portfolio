@@ -25,6 +25,7 @@ import {
 const Home = () => {
 	const [scope, animate] = useAnimate();
 	console.log('render');
+
 	useEffect(() => {
 		setTimeout(() => {
 			handleMainTitleAnimate(animate);
