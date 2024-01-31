@@ -45,7 +45,7 @@ const RollText = styled.span`
 `;
 
 const MenuLink = styled(NavLink)`
-	height: 22px;
+	height: 28px;
 	background-color: red;
 	padding: 0.5rem;
 	font-family: ${FONT_FAMILY.secondary};
