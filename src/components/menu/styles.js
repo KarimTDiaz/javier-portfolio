@@ -45,17 +45,18 @@ const RollText = styled.span`
 `;
 
 const MenuLink = styled(NavLink)`
-	height: 0.9375rem;
-	padding: 0.2rem;
 	font-family: ${FONT_FAMILY.secondary};
 	font-size: ${FONT_SIZE.xxxs};
-	overflow: hidden;
+	/* height: 0.9375rem;
+	padding: 0.2rem;
+	
+	overflow: hidden; */
 	/* &:hover {
 		${RollText}:first-child {
 			margin-top: -12px;
 		}
 	} */
-	@media screen and (min-width: 640px) {
+	/* @media screen and (min-width: 640px) {
 		height: 1.1875rem;
 		padding: 0.3rem;
 		font-size: ${FONT_SIZE.s};
@@ -84,7 +85,7 @@ const MenuLink = styled(NavLink)`
 				margin-top: -1.875rem;
 			}
 		}
-	}
+	} */
 `;
 
 export { MenuLink, MenuList, MenuListItem, RollText };
