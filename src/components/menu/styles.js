@@ -45,8 +45,9 @@ const RollText = styled.span`
 `;
 
 const MenuLink = styled(NavLink)`
-	height: 15px;
-	padding: 0.2rem;
+	height: 22px;
+	background-color: red;
+	padding: 0.5rem;
 	font-family: ${FONT_FAMILY.secondary};
 	font-size: ${FONT_SIZE.xxxs};
 	overflow: hidden;
@@ -81,7 +82,6 @@ const MenuLink = styled(NavLink)`
 		font-size: ${FONT_SIZE.xl};
 		&:hover {
 			${RollText}:first-child {
-				margin-top: -30px;
 				margin-top: -30px;
 			}
 		}
