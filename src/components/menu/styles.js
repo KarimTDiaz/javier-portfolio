@@ -37,7 +37,6 @@ const MenuListItem = styled.li`
 	position: fixed;
 	top: 1rem;
 	z-index: 1000;
-	background-color: red;
 `;
 const RollText = styled.span`
 	display: block;
@@ -46,14 +45,14 @@ const RollText = styled.span`
 `;
 
 const MenuLink = styled(NavLink)`
+	height: 25px;
+	padding: 0.2rem;
 	font-family: ${FONT_FAMILY.secondary};
 	font-size: ${FONT_SIZE.xxxs};
-	height: 0.9375rem;
-	padding: 0.2rem;
 	overflow: hidden;
 	&:hover {
 		${RollText}:first-child {
-			margin-top: -12px;
+			margin-top: -15px;
 		}
 	}
 	@media screen and (min-width: 640px) {
