@@ -5,19 +5,19 @@ const GlobalStyle = createGlobalStyle`
 
 @font-face {
 	font-family:'telegraf-slanted' ;
-	src: url('/assets/fonts/PPTelegraf-RegularSlanted.otf');
+	src: url('/assets/fonts/PPTelegraf-RegularSlanted.woff2') format('woff2');
 }
 @font-face {
 	font-family:'telegraf-regular' ;
-	src: url('/assets/fonts/PPTelegraf-Regular.otf');
+	src: url('/assets/fonts/PPTelegraf-Regular.otf') format('otf');
 }
 @font-face {
 	font-family:'telegraf-light' ;
-	src: url('/assets/fonts/PPTelegraf-Ultralight.otf');
+	src: url('/assets/fonts/PPTelegraf-Ultralight.otf') format('otf');
 }
 @font-face {
 	font-family:'telegraf-light-slanted' ;
-	src: url('/assets/fonts/PPTelegraf-UltralightSlanted.otf');
+	src: url('/assets/fonts/PPTelegraf-UltralightSlanted.otf') format('otf');
 }
 
 *,*::after,*::before{
