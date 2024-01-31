@@ -39,20 +39,24 @@ const MenuListItem = styled.li`
 	z-index: 1000;
 `;
 const RollText = styled.span`
-	display: block;
+	/* display: block; */
 	position: relative;
 	transition: margin 420ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
 `;
 
 const MenuLink = styled(NavLink)`
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
 	height: 25px;
-	padding: 0.2rem;
+	background-color: red;
+	padding-top: 0.5rem;
 	font-family: ${FONT_FAMILY.secondary};
 	font-size: ${FONT_SIZE.xxxs};
 	overflow: hidden;
 	&:hover {
 		${RollText}:first-child {
-			margin-top: -15px;
+			margin-top: -30px;
 		}
 	}
 	@media screen and (min-width: 640px) {
