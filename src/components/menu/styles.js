@@ -45,7 +45,7 @@ const RollText = styled.span`
 `;
 
 const MenuLink = styled(NavLink)`
-	height: 15px;
+	height: 0.9375rem;
 	padding: 0.2rem;
 	font-family: ${FONT_FAMILY.secondary};
 	font-size: ${FONT_SIZE.xxxs};
@@ -56,32 +56,32 @@ const MenuLink = styled(NavLink)`
 		}
 	} */
 	@media screen and (min-width: 640px) {
-		height: 19px;
+		height: 1.1875rem;
 		padding: 0.3rem;
 		font-size: ${FONT_SIZE.s};
 		&:hover {
 			${RollText}:first-child {
-				margin-top: -20px;
+				margin-top: -1.25rem;
 			}
 		}
 	}
 	@media screen and (min-width: 1024px) {
-		height: 28px;
+		height: 1.75rem;
 		padding: 0.4rem;
 		font-size: ${FONT_SIZE.l};
 		&:hover {
 			${RollText}:first-child {
-				margin-top: -25px;
+				margin-top: -1.5625rem;
 			}
 		}
 	}
 	@media screen and (min-width: 1440px) {
-		height: 35px;
+		height: 2.1875rem;
 		padding: 0.5rem;
 		font-size: ${FONT_SIZE.xl};
 		&:hover {
 			${RollText}:first-child {
-				margin-top: -30px;
+				margin-top: -1.875rem;
 			}
 		}
 	}
