@@ -6,7 +6,9 @@ export const COLORS = {
 export const FONT_FAMILY = {
 	primary: `'Inter', sans-serif`,
 	secondary: 'telegraf-slanted',
-	secondaryRegular: ''
+	secondaryRegular: 'telegraf-regular',
+	secondaryLight: 'telegraf-light',
+	secondaryLightSlanted: 'telegraf-light-slanted'
 };
 export const FONT_SIZE = {
 	xxxs: '14px',

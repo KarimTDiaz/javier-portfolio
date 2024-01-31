@@ -2,30 +2,20 @@ import styled from 'styled-components';
 
 const WorksContainer = styled.div`
 	width: 100%;
-	height: 100%;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	padding: 6rem 1rem 0 1rem;
-`;
-
-const WorksFlexContainer = styled.div`
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	gap: 10rem;
-	@media screen and (min-width: 1024px) {
-		flex-direction: row-reverse;
-	}
+	display: grid;
+	place-items: center;
+	min-height: 100vh;
 `;
 
 const WorksPreviewsContainer = styled.div`
+	display: none;
 	@media screen and (min-width: 1024px) {
+		display: block;
 		position: fixed;
-		left: 5vw;
-		bottom: 10vh;
+		z-index: -1;
+		/* left: 5vw;
+		bottom: 10vh; */
 	}
 `;
 
-export { WorksContainer, WorksFlexContainer, WorksPreviewsContainer };
+export { WorksContainer, WorksPreviewsContainer };

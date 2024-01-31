@@ -170,14 +170,12 @@ const BottomRightVideoContainer = styled(motion.div)`
 	height: 30vh;
 	background-color: ${COLORS.primary};
 	@media screen and (min-width: 1440px) {
-		bottom: 15rem;
+		bottom: 6rem;
 		right: 18rem;
 		width: 25vw;
 	}
 	@media screen and (min-width: 1720px) {
-		width: 20vw;
-		bottom: 10rem;
-		right: 25rem;
+		right: 20rem;
 	}
 `;
 
@@ -187,14 +185,12 @@ const BottomRightVideo = styled.video`
 	width: 20vw;
 	height: 30vh;
 	@media screen and (min-width: 1440px) {
-		bottom: 15rem;
+		bottom: 6rem;
 		right: 18rem;
 		width: 25vw;
 	}
 	@media screen and (min-width: 1720px) {
-		width: 20vw;
-		bottom: 10rem;
-		right: 25rem;
+		right: 20rem;
 	}
 `;
 

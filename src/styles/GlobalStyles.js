@@ -11,6 +11,14 @@ const GlobalStyle = createGlobalStyle`
 	font-family:'telegraf-regular' ;
 	src: url('/assets/fonts/PPTelegraf-Regular.otf');
 }
+@font-face {
+	font-family:'telegraf-light' ;
+	src: url('/assets/fonts/PPTelegraf-Ultralight.otf');
+}
+@font-face {
+	font-family:'telegraf-light-slanted' ;
+	src: url('/assets/fonts/PPTelegraf-UltralightSlanted.otf');
+}
 
 *,*::after,*::before{
     box-sizing: border-box;

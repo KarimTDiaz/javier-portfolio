@@ -1,3 +1,4 @@
+import { useNavigate } from 'react-router-dom';
 import { FONT_FAMILY, FONT_SIZE } from '../../constants/variables';
 import { WORKS_ITEMS } from '../../constants/works';
 import Text from '../text/Text';
@@ -5,17 +6,20 @@ import Title from '../title/Title';
 import { WorksMenuItem, WorksMenuLink, WorksMenuList } from './styles';
 
 const WorksMenu = ({ setPreviewVideo }) => {
+	const navigate = useNavigate();
 	return (
 		<nav>
 			<WorksMenuList>
 				{WORKS_ITEMS.map((item, index) => (
-					<WorksMenuItem>
-						<WorksMenuLink
-							to={`/works/${item.project}`}
-							onMouseOver={() => setPreviewVideo(item.preview)}
-						>
+					<WorksMenuItem
+						onClick={() => navigate(`/works/${item.project}`, { state: item })}
+						/* to={`/works/${item.project}`} */
+						onMouseOver={() => setPreviewVideo(item.preview)}
+						onMouseLeave={() => setPreviewVideo('')}
+					>
+						<WorksMenuLink>
 							<Title
-								size={[FONT_SIZE.xl, FONT_SIZE.xxl, FONT_SIZE.xxxl]}
+								size={[FONT_SIZE.xl, FONT_SIZE.xxl]}
 								font={FONT_FAMILY.secondary}
 							>
 								{item.project}
