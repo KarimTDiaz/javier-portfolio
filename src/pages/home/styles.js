@@ -21,9 +21,11 @@ const TitleLetter = styled(motion.span)`
 	position: relative;
 	z-index: 100;
 	font-size: 20vw;
-	font-weight: 800;
+	font-weight: 600;
 	margin: 0;
 	transform: translateY(100%);
+	color: white;
+	mix-blend-mode: difference;
 `;
 const HiddenTitle = styled(motion.div)`
 	position: absolute;
@@ -31,7 +33,7 @@ const HiddenTitle = styled(motion.div)`
 	bottom: 8vh;
 	width: 100%;
 	height: 60%;
-	transform: translateY(50%);
+	transform: translateY(40%);
 	background-color: ${COLORS.primary};
 	@media screen and (min-width: 1024px) {
 		transform: translateY(50%);
@@ -61,10 +63,10 @@ const RolText = styled(motion.div)`
 const TopVideoContainer = styled(motion.div)`
 	position: absolute;
 	z-index: -1;
-	top: 22vh;
-	left: 25vw;
-	width: 40vw;
-	height: 40vh;
+	top: 21vh;
+	left: 24vw;
+	width: 50vw;
+	height: 100%;
 	background-color: ${COLORS.primary};
 	@media screen and (min-width: 728px) {
 		left: 30vw;
@@ -74,7 +76,7 @@ const TopVideoContainer = styled(motion.div)`
 	@media screen and (min-width: 1024px) {
 		left: 30vw;
 		top: 15vh;
-		width: 30vw;
+		width: 35vw;
 	}
 	@media screen and (min-width: 1440px) {
 		left: 35vw;
@@ -110,13 +112,14 @@ const BottomLeftVideoContainer = styled(motion.div)`
 	bottom: 10vh;
 	right: 18vw;
 	width: 35vw;
-	height: 50vh;
+	height: 100%;
 	background-color: ${COLORS.primary};
+
 	@media screen and (min-width: 640px) {
 		width: 25vw;
 	}
 	@media screen and (min-width: 728px) {
-		width: 20vw;
+		width: 25vw;
 	}
 	@media screen and (min-width: 1440px) {
 		width: 14vw;
@@ -145,7 +148,7 @@ const BottomLeftVideo = styled(motion.video)`
 		width: 25vw;
 	}
 	@media screen and (min-width: 728px) {
-		width: 20vw;
+		width: 15vw;
 	}
 	@media screen and (min-width: 1440px) {
 		width: 14vw;
@@ -167,15 +170,16 @@ const BottomLeftVideo = styled(motion.video)`
 const BottomRightVideoContainer = styled(motion.div)`
 	position: absolute;
 	width: 20vw;
-	height: 30vh;
+	height: 100%;
 	background-color: ${COLORS.primary};
 	@media screen and (min-width: 1440px) {
 		bottom: 6rem;
-		right: 18rem;
+		right: 25rem;
 		width: 25vw;
 	}
 	@media screen and (min-width: 1720px) {
-		right: 20rem;
+		right: 10rem;
+		width: 50vw;
 	}
 `;
 

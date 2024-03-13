@@ -37,6 +37,8 @@ const MenuListItem = styled.li`
 	position: fixed;
 	top: 1rem;
 	z-index: 1000;
+	color: white;
+	mix-blend-mode: difference;
 `;
 const RollText = styled.span`
 	/* display: block; */
@@ -49,14 +51,13 @@ const MenuLink = styled(NavLink)`
 	flex-direction: column;
 	gap: 1rem;
 	height: 25px;
-	background-color: red;
 	padding-top: 0.5rem;
 	font-family: ${FONT_FAMILY.secondary};
 	font-size: ${FONT_SIZE.xxxs};
 	overflow: hidden;
 	&:hover {
 		${RollText}:first-child {
-			margin-top: -30px;
+			margin-top: -1.875rem;
 		}
 	}
 	@media screen and (min-width: 640px) {
@@ -65,7 +66,7 @@ const MenuLink = styled(NavLink)`
 		font-size: ${FONT_SIZE.s};
 		&:hover {
 			${RollText}:first-child {
-				margin-top: -1.25rem;
+				margin-top: -2.1875rem;
 			}
 		}
 	}
@@ -75,7 +76,7 @@ const MenuLink = styled(NavLink)`
 		font-size: ${FONT_SIZE.l};
 		&:hover {
 			${RollText}:first-child {
-				margin-top: -1.5625rem;
+				margin-top: -35px;
 			}
 		}
 	}
@@ -85,7 +86,7 @@ const MenuLink = styled(NavLink)`
 		font-size: ${FONT_SIZE.xl};
 		&:hover {
 			${RollText}:first-child {
-				margin-top: -1.875rem;
+				margin-top: -2.8125rem;
 			}
 		}
 	}
