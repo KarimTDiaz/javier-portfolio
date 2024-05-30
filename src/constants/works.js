@@ -214,7 +214,7 @@ export const WORKS_ITEMS = [
 	},
 	{
 		id: v4(),
-		project: 'ARCHIV',
+		project: 'ARCHIVE',
 		rol: 'DOP + EDIT + COLOR',
 		preview: '/assets/videos/archive-preview.mp4'
 	}
