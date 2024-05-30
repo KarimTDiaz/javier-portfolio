@@ -13,7 +13,7 @@ const WorksMenu = ({ setPreviewVideo }) => {
 				{WORKS_ITEMS.map((item, index) => (
 					<WorksMenuItem
 						key={item.id}
-						onClick={() => navigate(`/works/${item.project}`, { state: item })}
+						onClick={() => navigate(`/works/${item.project}`)}
 						onMouseOver={() => setPreviewVideo(item.preview)}
 						onMouseLeave={() => setPreviewVideo('')}
 					>

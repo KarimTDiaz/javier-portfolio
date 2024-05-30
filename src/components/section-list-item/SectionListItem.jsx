@@ -13,7 +13,7 @@ const SectionListItem = ({ item, delay }) => {
 				{item.field}
 			</Title>
 			<Text
-				size={[FONT_SIZE.s, FONT_SIZE.xxl]}
+				size={[FONT_SIZE.s, FONT_SIZE.xl]}
 				font={FONT_FAMILY.secondaryLight}
 			>
 				{item.value}

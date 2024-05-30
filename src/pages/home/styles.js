@@ -35,6 +35,9 @@ const HiddenTitle = styled(motion.div)`
 	height: 60%;
 	transform: translateY(40%);
 	background-color: ${COLORS.primary};
+	@media screen and (min-width: 640px) {
+		transform: translateY(55%);
+	}
 	@media screen and (min-width: 1024px) {
 		transform: translateY(50%);
 	}
@@ -174,8 +177,8 @@ const BottomRightVideoContainer = styled(motion.div)`
 	background-color: ${COLORS.primary};
 	@media screen and (min-width: 1440px) {
 		bottom: 6rem;
-		right: 25rem;
-		width: 25vw;
+		right: 15rem;
+		width: 30vw;
 	}
 	@media screen and (min-width: 1720px) {
 		right: 10rem;

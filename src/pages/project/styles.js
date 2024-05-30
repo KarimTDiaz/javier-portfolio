@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import styled from 'styled-components';
 
 const ProjectContainer = styled(motion.div)`
+	height: 100%;
 	padding: 5rem 1rem;
 `;
 
@@ -16,7 +17,10 @@ const ProjectFlex = styled.div`
 
 const ProjectDataContainer = styled.article`
 	padding: 2rem 0 4rem 0;
+	height: 100%;
 	@media screen and (min-width: 1024px) {
+		/* position: sticky;
+		top: 0; */
 		width: 50vw;
 	}
 `;
@@ -30,6 +34,7 @@ const ProjectDescriptionContainer = styled.div`
 const ProjectImagesContainer = styled(motion.div)`
 	@media screen and (min-width: 1024px) {
 		width: 50vw;
+		padding-top: 3rem;
 	}
 `;
 

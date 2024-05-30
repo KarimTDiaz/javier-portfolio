@@ -11,42 +11,42 @@ export const letters = [
 		text: 'T',
 		initial: { y: '100%' },
 		animate: { y: 0 },
-		transition: { duration: 0.5, ease: 'backOut', delay: 0.5 }
+		transition: { duration: 0.8, ease: 'backOut', delay: 0.5 }
 	},
 	{
 		id: 'il',
 		text: 'IL',
 		initial: { y: '100%' },
 		animate: { y: 0 },
-		transition: { duration: 0.9, ease: 'backOut', delay: 0.5 }
+		transition: { duration: 0.8, ease: 'backOut', delay: 0.5 }
 	},
 	{
 		id: 'o',
 		text: 'O',
 		initial: { y: '100%' },
 		animate: { y: 0 },
-		transition: { duration: 0.5, ease: 'backOut', delay: 0.5 }
+		transition: { duration: 0.8, ease: 'backOut', delay: 0.5 }
 	},
 	{
 		id: 'u',
 		text: 'U',
 		initial: { y: '100%' },
 		animate: { y: 0 },
-		transition: { duration: 0.5, ease: 'backOut', delay: 0.5 }
+		transition: { duration: 0.8, ease: 'backOut', delay: 0.5 }
 	},
 	{
 		id: 'n',
 		text: 'N',
 		initial: { y: '100%' },
 		animate: { y: 0 },
-		transition: { duration: 0.5, ease: 'backOut', delay: 0.5 }
+		transition: { duration: 0.8, ease: 'backOut', delay: 0.5 }
 	},
 	{
 		id: 'i',
 		text: 'I',
 		initial: { y: '100%' },
 		animate: { y: 0 },
-		transition: { duration: 0.5, ease: 'backOut', delay: 0.5 }
+		transition: { duration: 0.8, ease: 'backOut', delay: 0.5 }
 	}
 ];
 

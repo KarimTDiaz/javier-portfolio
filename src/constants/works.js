@@ -7,12 +7,16 @@ export const WORKS_ITEMS = [
 		rol: 'DOP + EDIT + COLOR',
 		preview: '/assets/videos/skydrug-preview.mp4',
 		projectFunctions: [
-			{ id: v4(), field: 'DATE', value: '2023' },
-			{ id: v4(), field: 'LOCATION', value: 'Gran Canaria' },
-			{ id: v4(), field: 'PROJECT', value: 'DOP-Edition' },
-			{ id: v4(), field: 'DIRECTOR', value: 'Johnas Kopp' },
-			{ id: v4(), field: 'MY WORK', value: 'Camera Assistant' },
-			{ id: v4(), field: 'ARTIST', value: 'Fiedrich Könh' }
+			{ id: v4(), field: 'DATE', value: '2020' },
+			{
+				id: v4(),
+				field: 'LOCATION',
+				value: 'GC, Madrid, Barcelona, Francia.'
+			},
+			{ id: v4(), field: 'PROJECT', value: 'Documental & Videoclip' },
+			{ id: v4(), field: 'DIRECTOR', value: 'Makerfly' },
+			{ id: v4(), field: 'MY WORK', value: 'Dop+Color+Edición+Foto fija' },
+			{ id: v4(), field: 'ARTIST', value: 'Pedro La Droga & Skyhook' }
 		],
 		description: [
 			'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
