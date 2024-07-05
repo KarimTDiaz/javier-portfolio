@@ -1,0 +1,4 @@
+- [ ] Change about text, take out to a constant
+- [ ] Poner en constante los videos , con su id , y sus opciones
+- [ ] Ordenar propiedades CSS
+- [ ] Poner en constante el menu , con sus respectivas rutas
