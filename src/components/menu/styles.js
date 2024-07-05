@@ -23,6 +23,7 @@ const MenuList = styled.ul`
 	}
 	& > :nth-child(3) {
 		right: 1rem;
+		display: ${({ path }) => path === '/about' && 'none'};
 		@media screen and (min-width: 1440px) {
 			top: ${({ path }) => path !== '/' && '2rem'};
 			height: ${({ path }) => (path !== '/' ? 0 : '100vh')};
