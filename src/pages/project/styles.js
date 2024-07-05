@@ -1,9 +1,13 @@
 import { motion } from 'framer-motion';
 import styled from 'styled-components';
 
-const ProjectContainer = styled(motion.div)`
+const ProjectContainer = styled.div`
+	position: relative;
 	height: 100%;
 	padding: 5rem 1rem;
+	@media screen and (min-width: 1024px) {
+		padding-top: 10rem;
+	}
 `;
 
 const ProjectFlex = styled.div`
@@ -15,16 +19,17 @@ const ProjectFlex = styled.div`
 	}
 `;
 
-const ProjectDataContainer = styled.article`
+const ProjectDataContainer = styled(motion.div)`
 	padding: 2rem 0 4rem 0;
 	height: 100%;
 	@media screen and (min-width: 1024px) {
-		/* position: sticky;
-		top: 0; */
+		position: sticky;
+		top: 0;
 		width: 50vw;
 	}
 `;
-const ProjectDescriptionContainer = styled.div`
+
+const ProjectDescriptionContainer = styled(motion.div)`
 	display: flex;
 	flex-direction: column;
 	gap: 2rem;
