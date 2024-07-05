@@ -9,6 +9,7 @@ const SectionListItem = ({ item, delay }) => {
 			<Title
 				size={[FONT_SIZE.s, FONT_SIZE.xxl]}
 				font={FONT_FAMILY.secondaryLightSlanted}
+				blend
 			>
 				{item.field}
 			</Title>

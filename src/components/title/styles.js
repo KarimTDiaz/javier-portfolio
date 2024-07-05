@@ -7,7 +7,8 @@ const StyledTitle = styled.h2`
 	font-size: ${({ size }) => size[0]};
 	font-weight: 600;
 	color: ${COLORS.secondary};
-	color: ${COLORS.primary};
+	color: ${({ blend }) =>
+		blend ? `${COLORS.secondary}` : `${COLORS.primary}`};
 	mix-blend-mode: difference;
 	@media screen and (min-width: 640px) {
 		@media screen and (min-width: 640px) {
